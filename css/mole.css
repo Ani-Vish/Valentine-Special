@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #fae1dd;
+  overflow: hidden;
+  font-family: "MonteCarlo";
+  font-size: x-large;
+  font-weight: 400;
+}
+
+#board {
+    width: 420px;
+    height: 420px;
+    /* background-color: green; */
+
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    position: relative;
+
+    /* background: url("./soil.png");
+    background-size: cover; */
+    border: 3px solid white;
+    border-radius: 25px;
+    /* z-index: 1000; */
+    background-color: rgba(0, 0, 0, 0.349);
+}
+
+#board div {
+    /* board = 540 x 540, divide into 3x3 tiles --> 180 x 180 per div */
+    width: 130px; 
+    height: 130px;
+    background-image: url("../img/pipe.png");
+    background-size: cover;
+    filter: hue-rotate(220deg);
+    position: relative;
+    z-index: 1000;
+}
+
+#board div img {
+    /* all img tags inside tiles */
+    width: 70px;
+    height: 70px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    position: relative;
+}
+
+img {
+    filter: hue-rotate(140deg);  
+}
+
+.logo {
+    float: left;
+    height: 50px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .headerlink {
+    float: right;
+    font-size: 14px;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    filter: hue-rotate(220deg);
+
+  }
+  
+  .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #ae0049;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 30px #ffffff, 0 0 30px #ffffff;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255);
+  }
+  
+  .nav-item {
+    font-weight: bold;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .navbar-toggler {
+    float: right;
+  }
+  
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem;
+  }
+  
+  footer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: url('../img/footer.png');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 25%;
+    z-index: -1;
+  }
+  
+  
+  h1 {
+    bottom:0;
+  }

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Happy Valentine's Day</title>
+  <link href="css/index.css" rel="stylesheet" type="text/css" />
+  <!-- Include jQuery from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Love+Light&family=Lovers+Quarrel&family=Miss+Fajardose&family=MonteCarlo&display=swap');
+    </style>
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body style="background-color: rgba(250, 137, 137, 0.694);">
+  <audio id="backgroundAudio" autoplay loop>
+    <source src="songs/Mast Magan.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // Play background music when there's user interaction
+    document.addEventListener("click", function () {
+      var audio = document.getElementById("backgroundAudio");
+      audio.volume = 0.7; // Adjust the volume if needed
+      audio.play();
+      // Remove the click event listener to avoid multiple plays on subsequent clicks
+      document.removeEventListener("click", arguments.callee);
+    });
+  </script>
+  
+  <script>
+    document.addEventListener('mousemove', function (e) {
+      let body = document.querySelector('body');
+      let heart = document.createElement('spanp');
+      let x = e.offsetX;
+      let y = e.offsetY;
+      heart.style.left = x + 'px';
+      heart.style.top = y + 'px';
+
+      let size = Math.random() * 80;
+      heart.style.width = 20 + size + 'px';
+      heart.style.height = 20 + size + 'px';
+
+      let transformValue = Math.random() * 360;
+      heart.style.transform = 'rotate(' + transformValue + 'deg)';
+
+      body.appendChild(heart);
+
+      setTimeout(function () {
+        heart.remove();
+      }, 1000);
+
+      let body2 = document.querySelector('body');
+      let heart2 = document.createElement('spanp_n');
+      heart2.style.left = x + 'px';
+      heart2.style.top = y + 'px';
+
+      heart2.style.width = size + 'px';
+      heart2.style.height = size + 'px';
+
+      heart2.style.transform = 'rotate(' + transformValue + 'deg)';
+
+      body2.appendChild(heart2);
+
+      setTimeout(function () {
+        heart2.remove();
+      }, 1000);
+
+      let body3 = document.querySelector('body');
+      let heart3 = document.createElement('spanp_n2');
+      heart3.style.left = x + 'px';
+      heart3.style.top = y + 'px';
+
+      heart3.style.width = size + 'px';
+      heart3.style.height = size + 'px';
+
+      heart3.style.transform = 'rotate(' + transformValue + 'deg)';
+
+      body3.appendChild(heart3);
+
+      setTimeout(function () {
+        heart3.remove();
+      }, 1000);
+    })
+  </script>
+  <div class="header">
+    <nav style="background-color: rgba(255, 0, 119, 0.525);" class="navbar navbar-expand-md fixed-top navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/Heart (1).png" alt="Logo" style="height: 30px; width: auto; margin-right: 10px;">
+          Valentine's Special
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Proposal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="wish.html">Wish</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="card2.html">Remember!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="secretMessage.html">Secret Message</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="game.html">Game</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+  <div class="container_prop">
+    <div>
+      <h1 class="header_text_prop">Yeeyy! Thnx Bubu😍</h1>
+    </div>
+    <div class="gif_container_prop">
+      <img
+        src="https://i.postimg.cc/wTDG30TB/yes.gif"
+        alt="Cute animated illustration"
+      />
+    </div>
+    <button class="btn_prop" id="yesButton_prop" onclick="nextPage()" style="background-color: rgb(255, 0, 149);color: rgb(0, 0, 0);">
+      Click it Baby!!
+    </button>
+  </div>
+
+  <script>
+    function nextPage() {
+      window.location.href = "ClickHere.html";
+    }
+  </script>
+
+  <footer class="footer">
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

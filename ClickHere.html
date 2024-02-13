@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Happy Valentine's Day</title>
+  <link href="css/index.css" rel="stylesheet" type="text/css" />
+  <!-- Include jQuery from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Love+Light&family=Lovers+Quarrel&family=Miss+Fajardose&family=MonteCarlo&display=swap');
+    </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+  </style>
+  <script>
+    document.addEventListener('mousemove', function (e) {
+      let body = document.querySelector('body');
+      let heart = document.createElement('spanp');
+      let x = e.offsetX;
+      let y = e.offsetY;
+
+      let size = Math.random() * 80;
+
+      let transformValue = Math.random() * 360;
+      let body3 = document.querySelector('body');
+      let heart3 = document.createElement('spanp_n2');
+      heart3.style.left = x + 'px';
+      heart3.style.top = y + 'px';
+
+      heart3.style.width = size + 'px';
+      heart3.style.height = size + 'px';
+
+      heart3.style.transform = 'rotate(' + transformValue + 'deg)';
+
+      body3.appendChild(heart3);
+
+      setTimeout(function () {
+        heart3.remove();
+      }, 1000);
+    })
+  </script>
+</head>
+
+<body style="background-color: #fd9daf; overflow: scroll;">
+
+  <audio id="backgroundAudio" autoplay loop>
+    <source src="songs/Ghum Hai Kisikey Pyaar Meiin.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // Play background music when there's user interaction
+    document.addEventListener("click", function () {
+      var audio = document.getElementById("backgroundAudio");
+      audio.volume = 0.7; // Adjust the volume if needed
+      audio.play();
+      // Remove the click event listener to avoid multiple plays on subsequent clicks
+      document.removeEventListener("click", arguments.callee);
+    });
+  </script>
+  
+  <div class="header">
+    <nav style="background-color: rgba(255, 0, 119, 0.525);" class="navbar navbar-expand-md fixed-top navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/Heart (1).png" alt="Logo" style="height: 30px; width: auto; margin-right: 10px;">
+          Valentine's Special
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Proposal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="wish.html">Wish</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="card2.html">Remember!</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="secretMessage.html">Secret Message</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="game.html">Game</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+  <div class="wrapper_flip" style=" bottom: 1000px; ">
+    <div>
+      <p style="text-align: center; color: white;font-size: 2rem; font-weight: bold; ">"You're not just worth falling for; you're the reason I believe in the magic of love."</p>
+    </div>
+    <div class="cols_flip">
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/1808082.jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You're my strength.</p><span class="span_flip"></span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You encourage me to be the best version of myself.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/0a94e5c8-fc62-4fe5-adac-691199c5d141.jpeg')">
+            <div class="inner_flip">
+              <p class="p_flip">You make me feel Awesome.</p><span class="span_flip"></span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I'm much more me when I'm with you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url(./img/Flip/19959704-4e15-4537-8580-cf40ad7545e8.jpeg)">
+            <div class="inner_flip">
+              <p class="p_flip">You make me feel better when I'm in doubt.</p><span class="span_flip"></span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I need you like a heart needs a beat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/1a3ff90f-6cd9-4ba9-b20f-72128381067f.jpeg')">
+            <div class="inner_flip">
+              <p class="p_flip">You take care of me when I'm sick.</p><span class="span_flip"></span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">If I know what love is. it's because of you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/1b4911ae-c9dc-4782-a6d2-56ac793f107e.jpeg')">
+            <div class="inner_flip">
+              <p class="p_flip">I feel so happy when I'm with you.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I love you more than the moon loves the stars.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/324627616.jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">I know I can trust you whatever the situation.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You always look on the bright side of me.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/3d-love-heart-wings-tjvvxbc3esox.jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">I love you more than I can count.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">Love you to infinity and beyond Bubu.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/4a6e00776da7d29a0729495328b6d4d2.jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You're a shinig light in the dark.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You always make me laugh.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/508970.jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You inspire me to be a better person everyday.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I admire you a lot.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/50a6a7547ee07bda68cd27d406b48eb6.jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You teach me, what unconditional love means.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You don't shirk from your duty.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url(./img/Flip/8441d0f7fc52e984808e43a28645ff44.jpg)">
+            <div class="inner_flip">
+              <p class="p_flip">We always have fun together.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I feel complete with you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/975053-free-download-love-heart.jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">Baby<br />Hug harder<br />Laugh Louder<br />Love Longer</p><span class="span_flip">
+              </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You are every reason, hope, dream I can ever think of. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip"
+            style="background-image: url('./img/Flip/[PHIN]\ Sweet\ heart\ -\ Apps\ on\ Galaxy\ Store.jpeg')">
+            <div class="inner_flip">
+              <p class="p_flip">Love is not what you say, love is what you do.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You are the best part of my life.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/ab9469afd02f92fbbd1bc2e238dfaa63.jpeg')">
+            <div class="inner_flip">
+              <p class="p_flip">You are heaven on earth.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">Just seeing you smile makes my day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/amy-shamblen-qdPnQuGeuwU-unsplash.jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">I didn'i choose you, my heart did.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">Without you I'm empty.<br />Body without a soul.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/Cherry\ heart.jpeg')">
+            <div class="inner_flip">
+              <p class="p_flip">Loving you is like breathing I can't stop.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You are the water to my ocean.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/download.jpeg')">
+            <div class="inner_flip">
+              <p class="p_flip">I need Vitamin U.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">My favourite place is inside your hug.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/download\ \(1\).jpeg')">
+            <div class="inner_flip">
+              <p class="p_flip">Kiss, Hug, Talk, Argue, Laugh, Support, Care and Love.<br />I ant this to be us</p><span
+                class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I never want to lose you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url(./img/Flip/download\ \(2\).jpeg)">
+            <div class="inner_flip">
+              <p class="p_flip">You are always by my side. Please be forever.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You are cute, handsome, beautiful, words can't explain.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/download\ \(3\).jpeg')">
+            <div class="inner_flip">
+              <p class="p_flip">I love the way you look, act.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">Everything about you is so unique, so special.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/download\ \(4\).jpeg')">
+            <div class="inner_flip">
+              <p class="p_flip">You are my weirdo.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You're a mystery and I want to unravel every page to reach the depths of you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/download\ \(6\).jpeg')">
+            <div class="inner_flip">
+              <p class="p_flip">You always make sure to be on my mind every second everyday.</p><span class="span_flip">
+              </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You're my lucky charm.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/download\ \(7\).jpeg')">
+            <div class="inner_flip">
+              <p class="p_flip">You're my best friend.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">And bestest boyfriend ever in this whole world.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip"
+            style="background-image: url('./img/Flip/Download\ Ai\ Generated\ Valentine\'S\ Day\ Love\ Royalty-Free\ Stock\ Illustration\ Image.jpeg')">
+            <div class="inner_flip">
+              <p class="p_flip">You're so calm, composed, gentle, and understanding.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You always keep your promise, aometimes late but you never break them.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/eaca5565-860e-4ccc-a342-0039990c0e6d.jpeg')">
+            <div class="inner_flip">
+              <p class="p_flip">Dreaming of you keeps me asleep, being with you keeps me alive.</p><span
+                class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">Tere are only two times I want to be with you..<br />Now & Forever.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/fadi-xd-I4dR572y7l0-unsplash.jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">Ever since I met you nobody else is worth thinking about.</p><span class="span_flip">
+              </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I smile everytime I think about you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url(./img/Flip/fbcbe205294368510bb6b49149a64844.jpg)">
+            <div class="inner_flip">
+              <p class="p_flip">Forever is a long time, but I won't mind spending it with you.</p><span
+                class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">My love for you is a journey starting at forever and ending at never.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip"
+            style="background-image: url('./img/Flip/Free\ \ Romantic\,\ Love\,\ Umbrella\ Background\ Images\,\ Romantic\ Love\ Wedding\ Background\ Photo\ Background\ PNG\ and\ Vectors.jpeg')">
+            <div class="inner_flip">
+              <p class="p_flip">You're my sunshine.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">Every time I see you I fall in love all over again.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/glass\ punk\ roses\ heart.jpeg')">
+            <div class="inner_flip">
+              <p class="p_flip">We belong together.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I'll be there for you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/heart-red-love-black-wallpaper.jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">I love your kisses.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">Being intimate with you it feels like it's just us and the rest world cease to exist.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/Heart.jpeg')">
+            <div class="inner_flip">
+              <p class="p_flip">I just sanna be your teddy bear.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You're not my number one, you're my only one.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/Heart\,\ Rose.jpeg')">
+            <div class="inner_flip">
+              <p class="p_flip">I fiight and argue so much over silly things yet you love and tolerate my every
+                nonsense.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I wanna cuddle with you every night.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/jamie-street-hBzrr6m6-pc-unsplash.jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">In a sea of people my eyes always search you.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">Me + You = :)
+                <3 <br />Me - You = :(
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/lovely-floating-romantic-heart-b.jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You're kisses leave me breatheless.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You never fake yourself. You always stay you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/lucas-lenzi-Zcn8PR0slmA-unsplash.jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You listen to every useless things I say with soo much patience.</p><span
+                class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You make me feel I'm so special.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/Red-Heart-Wallpaper-7798-Hd-Wall.jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You're my superhero.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I don't know what I would do without you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/sidney-pearce-yPMJliKzyc4-unsplash.jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You always protect me.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">
+                I'm clumsy, but you always steer me right without hesitation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip"
+            style="background-image: url('./img/Flip/sumaid-pal-singh-bakshi-3pMzvikHPTk-unsplash.jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You're the one that makes me bold, you're the one who makes me shy.</p><span
+                class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You're my pain and my cure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip"
+            style="background-image: url('./img/Flip/sumaid-pal-singh-bakshi-VZdD-bQ4QD0-unsplash.jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You love me with all my flaws.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You make my heart melt just a look from you is enough.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/susn-matthiessen-suydDJ9jCt0-unsplash.jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You're a good listener and you always have right words to encourage.</p><span
+                class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I can trust you with my life anytime.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/unnamed.jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">I'm sooo comfortable around you.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">Even in an unknown place when I think about yoy I never feel lonely.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/Valentine\ Background\ \ 3C1.jpeg')">
+            <div class="inner_flip">
+              <p class="p_flip">I love your kind heart.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You always celebrate every little good thing that happens to me.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url(./img/Flip/wallpaper-valentines-day-hearts.jpg)">
+            <div class="inner_flip">
+              <p class="p_flip">I'm proud of you and proud to be with you.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You make me feel like I can do anything when you believe in me.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip"
+            style="background-image: url('./img/Flip/Wallpaper\ for\ Valentine\'s\ Day\ -\ Roses\ and\ chocolates.jpeg')">
+            <div class="inner_flip">
+              <p class="p_flip">The sound of your voice is music to my ears.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I'm truly blessed and you're the best thing that ever happened to me.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(10\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">I love the way you look at me.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You are agreat problem solver and always patient with me.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(11\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">The way you make mw feel better just by holding me in your arms</p><span
+                class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I love watching movies with you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(12\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You're the most amazing person I've ever met.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I hope someday all your dreams coome true.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(13\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">Even a drop from my eyes and you leave everything to console me</p><span
+                class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I love how you're always checking in on me to make sure I'm okay.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(14\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">I love how proud you are of me.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">The way you look at me sometimes make me think you can see right through my soul.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(15\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You're very good with your hands.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You're very good at making big decisions and seeing the big picture.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(16\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You always know what I'm thinking and feeling even when I'm not sure myself.</p><span
+                class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">
+                I love how your eyes make me feel like the most beautiful woman in the world.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(17\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You have an amazing sense of humor.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">The way you sound calms me when we talk on voice calls/VCs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(18\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">I love the way you hold me when I cry.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I love how you are comitted to not only our relationship but your frienship with me.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(19\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">I love how you make me feel lucky.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip"> I love how your hair feels when I pull then and run my fingers through them.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(1\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">I love how you never judge me and always hear my side of story.</p><span
+                class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I love talking with you, watching you, spending time with you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(20\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">I'm so glad I met you.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I love the way your lips feels against mine when we kiss.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(21\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You always encourage me to follow my dreams.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I'll always cherish all those moments spent with you forever.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(22\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">Your loving personality is contagious.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You treat me like a princess.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(23\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You're just the best.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I love that you never try to change me and respect my true personality.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(24\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">I respect you.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I love the way you can keep any secret.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(25\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You're soo reliable.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">And I love how jealous you make me for you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(26\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">I love the way your touch warms me and my heart.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You have strong sense of right and wrong things.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(27\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You make me feel confident.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">No matter how busy you are, you always find time for me.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(27\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">Your mental strenght inspires me.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You endure so much without saying a word.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(28\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You're a natural leader.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I love how you lead us in our intimacy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(29\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You're incredible.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You're handsome both inside and outside.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(2\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You're my baby and I'm yours.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">With all the good traits you're equally efficient in being a naughty kid.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(3\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">Even when I force you, you always listen to my craziest deeds and accompany me.</p><span
+                class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I love roaming and getting lost with you in unknown places and look for ways out
+                together.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(4\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You give me butterflies in my stomach</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You're someone to fight a war for.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(5\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You value my opinion.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You think every possibilty before acting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(6\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">Thanks for always smilimg back at me.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">And thanks for forgiving me time to time no matter what stupid mistakes I've made or
+                will make again.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(7\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You're a dream come true.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">You're my cutiepie, unique sweetheart.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col_flip" ontouchstart="this.classList.toggle('hover');">
+        <div class="container_flip">
+          <div class="front_flip" style="background-image: url('./img/Flip/new_1\ \(8\).jpg')">
+            <div class="inner_flip">
+              <p class="p_flip">You're my heart.<br />I LOVE YOU.</p><span class="span_flip"> </span>
+            </div>
+          </div>
+          <div class="back_flip">
+            <div class="inner_flip">
+              <p class="p_flip">I Miss You Baby.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div>
+      <p style="text-align: center; color: white;font-size: 2rem; font-weight: bold;">Apart from these, there are countless reasons to fall for you.</p>
+    </div>
+    <br/>
+    <br/>
+  </div>
+
+  <footer class="footer">
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
